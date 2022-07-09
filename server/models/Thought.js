@@ -2,14 +2,24 @@ const { Schema, model } = require('mongoose');
 const reactionSchema = require('./Reaction');
 const dateFormat = require('../utils/dateFormat');
 
-const thoughtSchema = new Schema(
+const PostSchema = new Schema(
   {
-    thoughtText: {
+    postTitle: {
       type: String,
-      required: 'You need to leave a thought!',
+      required: 'You need a title',
+      minlength: 1,
+      maxlength: 60
+    },
+    postText: {
+      type: String,
+      required: 'Please include some description',
       minlength: 1,
       maxlength: 280
     },
+    postPrice: {
+      type: Number,
+      required: 'Indicate your class price',
+         },
     createdAt: {
       type: Date,
       default: Date.now,
@@ -28,10 +38,10 @@ const thoughtSchema = new Schema(
   }
 );
 
-thoughtSchema.virtual('reactionCount').get(function() {
+PostSchema.virtual('reactionCount').get(function() {
   return this.reactions.length;
 });
 
-const Thought = model('Thought', thoughtSchema);
+const Post = model('Post', PostSchema);
 
-module.exports = Thought;
+module.exports = Post;

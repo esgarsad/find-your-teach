@@ -1,0 +1,47 @@
+[
+    {
+        "postTitle" : "Chinese teacher",
+        "postPrice" : 25,
+        "postText" : "molestiae dicta voluptas ut iusto et hic nam", 
+        "username" : "Jody.Eichmann", 
+        "reactions" : [ 
+            {
+                "reactionBody" : "non exercitationem consequatur temporibus quia dicta id earum molestias voluptatibus et ut quia officiis dignissimos ex maxime sit voluptatem", 
+                "username" : "Tyree17"
+            } 
+        ] 
+    },
+    {
+        "postTitle" : "Chinese teacher",
+        "postPrice" : 25,
+        "postText" : "sapiente illo animi non et molestiae et blanditiis adipisci aut ut dolore", 
+        "username" : "Shyann.Crist57", 
+        "reactions" : [ ] 
+    },
+    {
+        "postTitle" : "Chinese teacher",
+        "postPrice" : 25,
+        "postText" : "et ea non ut occaecati quasi ullam", 
+        "username" : "Elton_Heaney", 
+        "reactions" : [ 
+            {
+                "reactionBody" : "praesentium id ratione quisquam voluptatibus rerum ut et assumenda", 
+                "username" : "Annabelle79" 
+            }
+     ] 
+    },
+    {
+        "postTitle" : "Chinese teacher",
+        "postPrice" : 25,
+        "postText" : "nam assumenda dolorum est sint eum qui dolorem", 
+        "username" : "Donny21", 
+        "reactions" : [ ] 
+    },
+    {
+        "postTitle" : "Chinese teacher",
+        "postPrice" : 25,
+        "postText" : "architecto et eos ut odio repudiandae", 
+        "username" : "Ayana.Bogisich", 
+        "reactions" : [ ] 
+    }
+]

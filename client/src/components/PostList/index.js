@@ -25,12 +25,13 @@ const PostList = ({ posts, title }) => {
             </p>
             <div className="card-body">
               <Link to={`/post/${post._id}`}>
+              <p>{post.postTitle}</p>
                 <p>{post.postText}</p>                
-          <p>{post.postTitle}</p>
+    
           <p>${post.postPrice}.00/Hour</p>
                 <p className="mb-0">
-                  Reactions: {post.reactionCount} || Click to{' '}
-                  {post.reactionCount ? 'see' : 'start'} the discussion!
+                  Comments: {post.commentCount} || Click to{' '}
+                  {post.commentCount ? 'see' : 'start'} the join!
                 </p>
               </Link>
             </div>

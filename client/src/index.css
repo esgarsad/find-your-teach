@@ -3,8 +3,8 @@
   --secondary: yellow;
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
-  --light: #e1f5f4;
-  --dark: grey;
+  --light: grey;
+  --dark: black;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --spacing-one: calc(1rem * 0.25);
@@ -31,7 +31,7 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-color: #f3fffee1;
+  background-image: url(./assets/images/learning.jpg);
 }
 
 h1,

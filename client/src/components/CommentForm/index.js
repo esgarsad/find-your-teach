@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 import { useMutation } from '@apollo/client';
-import { ADD_REACTION } from '../../utils/mutations';
+import { ADD_COMMENT } from '../../utils/mutations';
 
-const ReactionForm = ({ postId }) => {
-  const [reactionBody, setBody] = useState('');
+const CommentForm = ({ postId }) => {
+  const [commentBody, setBody] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
-  const [addReaction, { error }] = useMutation(ADD_REACTION);
+  const [addComment, { error }] = useMutation(ADD_COMMENT);
 
   // update state based on form input changes
   const handleChange = (event) => {
@@ -21,8 +21,8 @@ const ReactionForm = ({ postId }) => {
     event.preventDefault();
 
     try {
-      await addReaction({
-        variables: { reactionBody, postId },
+      await addComment({
+        variables: { commentBody, postId },
       });
 
       // clear form value
@@ -47,7 +47,7 @@ const ReactionForm = ({ postId }) => {
       >
         <textarea
           placeholder="Contact the owner of this post!"
-          value={reactionBody}
+          value={commentBody}
           className="form-input col-12 col-md-9"
           onChange={handleChange}
         ></textarea>
@@ -62,4 +62,4 @@ const ReactionForm = ({ postId }) => {
   );
 };
 
-export default ReactionForm;
+export default CommentForm;

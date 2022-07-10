@@ -12,26 +12,26 @@ const PostList = ({ posts, title }) => {
       {posts &&
         posts.map(post => (
           <div key={post._id} className="card mb-3">
-            <p className="card-header">
-              <Link
-                to={`/profile/${post.username}`}
+
+            {<p className="card-header">
+              <Link 
+                to={`/profile/${post.postTitle}`}
                 style={{ fontWeight: 700 }}
                 className="text-light"
               >
-                {post.username}
-              </Link>{' '}
-              post on {post.createdAt}
-              
-            </p>
+                {post.postTitle}
+              </Link >{' '}
+              <p>${post.postPrice}.00/Hour</p>
+            </p>            
+    }
+
             <div className="card-body">
               <Link to={`/post/${post._id}`}>
-              <p>{post.postTitle}</p>
+              <p>{post.username}</p>
                 <p>{post.postText}</p>                
-    
-          <p>${post.postPrice}.00/Hour</p>
+      
                 <p className="mb-0">
-                  Comments: {post.commentCount} || Click to{' '}
-                  {post.commentCount ? 'see' : 'start'} the join!
+                  Comments: {post.commentCount} 
                 </p>
               </Link>
             </div>

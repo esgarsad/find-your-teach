@@ -21,10 +21,13 @@ const PostList = ({ posts, title }) => {
                 {post.username}
               </Link>{' '}
               post on {post.createdAt}
+              
             </p>
             <div className="card-body">
               <Link to={`/post/${post._id}`}>
-                <p>{post.postText}</p>
+                <p>{post.postText}</p>                
+          <p>{post.postTitle}</p>
+          <p>${post.postPrice}.00/Hour</p>
                 <p className="mb-0">
                   Reactions: {post.reactionCount} || Click to{' '}
                   {post.reactionCount ? 'see' : 'start'} the discussion!

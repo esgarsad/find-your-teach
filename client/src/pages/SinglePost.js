@@ -32,6 +32,9 @@ const SinglePost= (props) => {
         </p>
         <div className="card-body">
           <p>{post.postText}</p>
+          <p>{post.postTitle}</p>
+          <p>{post.postPrice}</p>
+
         </div>
       </div>
 

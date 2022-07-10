@@ -11,7 +11,9 @@ const typeDefs = gql`
 
   type Post {
     _id: ID
+    postTitle: String
     postText: String
+    postPrice: Float
     createdAt: String
     username: String
     reactionCount: Int

@@ -11,7 +11,7 @@ const PostList = ({ posts, title }) => {
       <h3>{title}</h3>
       {posts &&
         posts.map(post => (
-          <div key={post._id} className="card mb-3">
+          <div key={post._id} className="card col-3">
 
             {<p className="card-header">
               <Link 

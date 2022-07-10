@@ -2,46 +2,46 @@
     {
         "postTitle" : "Chinese teacher",
         "postPrice" : 25,
-        "postText" : "molestiae dicta voluptas ut iusto et hic nam", 
+        "postText" : "Chinese teacher with big tons of experience, you'll learn in no time!", 
         "username" : "Jody.Eichmann", 
-        "reactions" : [ 
+        "comments" : [ 
             {
-                "reactionBody" : "non exercitationem consequatur temporibus quia dicta id earum molestias voluptatibus et ut quia officiis dignissimos ex maxime sit voluptatem", 
+                "commentBody" : "please send me information to user@user.com", 
                 "username" : "Tyree17"
             } 
         ] 
     },
     {
-        "postTitle" : "Chinese teacher",
+        "postTitle" : "Classic guitar teacher",
         "postPrice" : 25,
-        "postText" : "sapiente illo animi non et molestiae et blanditiis adipisci aut ut dolore", 
+        "postText" : "Classic guitar is my passion and with my method, you will learn", 
         "username" : "Shyann.Crist57", 
-        "reactions" : [ ] 
+        "comments" : [ ] 
     },
     {
-        "postTitle" : "Chinese teacher",
-        "postPrice" : 25,
-        "postText" : "et ea non ut occaecati quasi ullam", 
+        "postTitle" : "Math teacher",
+        "postPrice" : 35,
+        "postText" : "Don't you think math is exciting? then you and I will be best friends forever", 
         "username" : "Elton_Heaney", 
-        "reactions" : [ 
+        "comments" : [ 
             {
-                "reactionBody" : "praesentium id ratione quisquam voluptatibus rerum ut et assumenda", 
+                "commentBody" : "Amazing!", 
                 "username" : "Annabelle79" 
             }
      ] 
     },
     {
-        "postTitle" : "Chinese teacher",
-        "postPrice" : 25,
-        "postText" : "nam assumenda dolorum est sint eum qui dolorem", 
+        "postTitle" : "Math teacher from Nash Communiti College",
+        "postPrice" : 28,
+        "postText" : "You will learn math with a performace focus", 
         "username" : "Donny21", 
-        "reactions" : [ ] 
+        "comments" : [ ] 
     },
     {
-        "postTitle" : "Chinese teacher",
+        "postTitle" : "French teacher, native speaker",
         "postPrice" : 25,
-        "postText" : "architecto et eos ut odio repudiandae", 
+        "postText" : "If you can say salut, you will learn French super easy the way I did", 
         "username" : "Ayana.Bogisich", 
-        "reactions" : [ ] 
+        "comments" : [ ] 
     }
 ]

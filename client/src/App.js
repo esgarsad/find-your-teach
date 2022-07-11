@@ -12,6 +12,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
  import Home from './pages/Home';
+
+ import Services from './pages/Services'; /*y*/
+
+
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
  import SinglePost from './pages/SinglePost';
@@ -48,7 +52,13 @@ function App() {
                <Route 
                 path="/" 
                 element={<Home />} 
+
               />
+              <Route 
+                path="/" 
+                element={<Services />} /*y*/
+              />
+
               <Route 
                 path="/login" 
                 element={<Login />} 

@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 
  import Home from './pages/Home';
 
- import Services from './pages/Services'; /*y*/
+ import Results from './pages/Results'; /*y*/
 
 
 import Login from './pages/Login';
@@ -52,11 +52,10 @@ function App() {
                <Route 
                 path="/" 
                 element={<Home />} 
-
               />
               <Route 
-                path="/" 
-                element={<Services />} /*y*/
+                path="/results" 
+                element={<Results />} /*y*/
               />
 
               <Route 

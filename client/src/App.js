@@ -15,6 +15,9 @@ import Footer from './components/Footer';
 
  import Results from './pages/Results'; /*y*/
 
+ import Services from './pages/Services'; /*y*/
+
+
 
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
@@ -57,6 +60,12 @@ function App() {
                 path="/results" 
                 element={<Results />} /*y*/
               />
+
+              <Route 
+                path="/services" 
+                element={<Services />} /*y*/
+              />
+              
 
               <Route 
                 path="/login" 

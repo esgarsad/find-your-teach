@@ -30,7 +30,7 @@ const Results = () => {
           {(
             <PostList
               posts={posts}
-              title="Some Posts you might be interested in"
+              title="Here are some teachers you might find helpful"
             />
           )}
         </div>

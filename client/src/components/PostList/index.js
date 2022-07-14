@@ -14,13 +14,9 @@ const PostList = ({ posts, title }) => {
           <div key={post._id} className="card col-3">
 
             {<p className="card-header">
-              <Link 
-                to={`/profile/${post.postTitle}`}
-                style={{ fontWeight: 700 }}
-                className="text-light"
-              >
+              
                 {post.postTitle}
-              </Link >{' '}
+              
               <p>${post.postPrice}.00/Hour</p>
             </p>            
     }

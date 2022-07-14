@@ -48,7 +48,9 @@ export const QUERY_USER = gql`
       email
         posts {
         _id
+        postTitle
         postText
+        postPrice
         createdAt
         commentCount
       }
@@ -64,7 +66,9 @@ export const QUERY_ME = gql`
       email
         posts {
         _id
+        postTitle
         postText
+        postPrice
         createdAt
         commentCount
         comments {

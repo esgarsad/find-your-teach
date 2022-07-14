@@ -42,6 +42,7 @@ const resolvers = {
       return { token, user };
     },
     login: async (parent, { email, password }) => {
+      console.log("hello")
       const user = await User.findOne({ email });
 
       if (!user) {
@@ -58,6 +59,7 @@ const resolvers = {
       return { token, user };
     },
     addPost: async (parent, args, context) => {
+      console.log("hello2")
       if (context.user) {
         const post = await Post.create({ ...args, username: context.user.username });
 

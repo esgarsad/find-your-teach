@@ -34,9 +34,7 @@ const SinglePost= (props) => {
           <p>{post.postText}</p>
           <p>{post.postTitle}</p>
           <p>${post.postPrice}.00/hour</p>
-          <button className="btn" >
-          Contact Teacher
-        </button>
+          
         </div>
       </div>
 

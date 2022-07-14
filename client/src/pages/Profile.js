@@ -3,7 +3,7 @@ import { Navigate, useParams } from 'react-router-dom';
 
 import PostForm from '../components/PostForm';
 import PostList from '../components/PostList';
-import { useQuery, useMutation } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
@@ -15,7 +15,7 @@ const Profile = (props) => {
     variables: { username: userParam },
   });
 
-  const user = data?.me || data?.user || {};
+  const user = data?.me || data?.user || data?.posts || {};
 
   // navigate to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {

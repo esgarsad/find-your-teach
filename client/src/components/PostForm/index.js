@@ -27,9 +27,11 @@ import { ADD_POST } from '../../utils/mutations';
     // submit form
     const handleFormSubmit = async (event) => {
       event.preventDefault();
-  console.log("button clicked")
+  
       try {
+        //console.log(postFormState)
          await addPost({
+          
           variables: { ...postFormState },
         });
   
@@ -37,9 +39,10 @@ import { ADD_POST } from '../../utils/mutations';
       } catch (e) {
         console.error(e);
       }
-      console.log(setPostFormState)
+      
     };
-
+   // const numeric=postFormState.postPrice.replace(/['"]+/g, '')
+//console.log(numeric)
   return (
     <div>
      
@@ -69,7 +72,7 @@ import { ADD_POST } from '../../utils/mutations';
     <input
             placeholder="add a Price "
             name="postPrice"
-            type="postPrice"
+            type="number"
             id="postPrice"
       value={postFormState.postPrice}
       className="form-input col-12 col-md-9"

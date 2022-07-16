@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
 const PostList = ({ posts, title, post }) => {
- 
-  const user= Auth.getProfile().data.username;
+  
+   let user = 'userName';
+   if (Auth.loggedIn()) {
+   user = Auth.getProfile().data.username;
+console.log(user)
+}
 
   if (!posts.length) {
     return <h3>You don't have any Posts yet, start posting now !</h3>;
   }
-
 
   return (
     <div>
@@ -19,9 +22,7 @@ const PostList = ({ posts, title, post }) => {
           <div key={post._id} className="card col-3">
 
             {<p className="card-header">
-              
                 {post.postTitle}
-              
               <p>${post.postPrice}.00/Hour</p>
             </p>            
     }
@@ -34,13 +35,13 @@ const PostList = ({ posts, title, post }) => {
                   Comments: {post.commentCount} 
                 </p>
               </Link>
+              
               {(user === post.username) ? (
           <button className="btn" >
           Delete Post
         </button>
           ):
           (<>
-          
           </>)
           }
             </div>

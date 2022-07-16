@@ -8,7 +8,12 @@ import { QUERY_POST } from '../utils/queries';
 
 const SinglePost= (props) => {
   const { id: postId } = useParams();
-  const user= Auth.getProfile().data.username;
+  let user = 'userName';
+  if (Auth.loggedIn()) {
+  user = Auth.getProfile().data.username;
+console.log(user)
+}
+  
   const { loading, data } = useQuery(QUERY_POST, {
     variables: { id: postId },
   });
@@ -32,6 +37,7 @@ const SinglePost= (props) => {
           <p>{post.postText}</p>
           <p>{post.postTitle}</p>
           <p>${post.postPrice}.00/hour</p>
+
           {(user === post.username) ? (
           <button className="btn" >
           Delete Post
@@ -47,8 +53,6 @@ const SinglePost= (props) => {
       {post.commentCount > 0 && (
         <CommentList comments={post.comments} />
       )}
-
-      {/* {Auth.loggedIn() && <CommentForm postId={post._id} />} */}
     </div>
   );
 };

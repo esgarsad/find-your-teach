@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Auth from '../../utils/auth';
 
-const PostList = ({ posts, title }) => {
+const PostList = ({ posts, title, post }) => {
+ 
+  const user= Auth.getProfile().data.username;
+
   if (!posts.length) {
-    return <h3>No posts Yet</h3>;
+    return <h3>You don't have any Posts yet, start posting now !</h3>;
   }
+
 
   return (
     <div>
@@ -20,16 +25,24 @@ const PostList = ({ posts, title }) => {
               <p>${post.postPrice}.00/Hour</p>
             </p>            
     }
-
+          
             <div className="card-body">
               <Link to={`/post/${post._id}`}>
               <p>{post.username}</p>
                 <p>{post.postText}</p>                
-      
-                <p className="mb-0">
+                      <p className="mb-0">
                   Comments: {post.commentCount} 
                 </p>
               </Link>
+              {(user === post.username) ? (
+          <button className="btn" >
+          Delete Post
+        </button>
+          ):
+          (<>
+          
+          </>)
+          }
             </div>
           </div>
         ))}

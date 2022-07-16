@@ -56,6 +56,23 @@ export const ADD_COMMENT = gql`
   }
 `;
 
+export const DELETE_POST = gql`
+  mutation deletePost($postTitle: String!, $postText: String!, $postPrice: String!) {
+    deletePost(postText: $postText, postTitle: $postTitle, postPrice: $postPrice) {
+      _id
+      postTitle
+      postPrice
+      postText
+      createdAt
+      username
+      commentCount
+      comments {
+        _id
+      }
+    }
+  }
+`;
+
 
 
 

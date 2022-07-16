@@ -1,33 +1,55 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Step_1Student from '../assets/images/checkin.png';
+import Step_2Student from '../assets/images/search.png';
+import Step_3Student from '../assets/images/join.jpg';
+import Step_4Student from '../assets/images/reading.png';
 
+
+// import sectionTeacher from '../assets/images/teacher.png';
 import './index.css';
 
+// const styles ={
+
+//        backgroundColor: white 
+//     }
+    
 
 
 function Services() {
 
     const [projects] = useState([
         {
-            name: 'avatar',
+            name: 'learni',
             deploy: ' https://fathomless-bayou-71383.herokuapp.com/',
             problem_solved: 'Students.',
-            technologies_used: 'JavaScript, Boostrap, Node.js, Handlebars, MsSQL, Heroku.',
+            Step_1: 'Check in',
+            Step_2: 'Search',
+            Step_3: 'Join',
+            Step_4: 'Learn '
+            
         },
         {
-            name: 'video-confer',
+            name: 'teacher',
             deploy: 'https://lisavi28.github.io/leisureapp/',
-            problem_solved: 'Creation and development of interactive Front-End project ',
-            technologies_used: 'JavaScript, jQuery, Client Side APIs, UI-Kit.'
+            problem_solved: 'Teachers',
+            Step_1: 'Check in',
+            Step_2: 'Add your Skills',
+            Step_3: 'Wait for students',
+            Step_4: 'Teach'
+
+            // technologies_used: 'JavaScript, jQuery, Client Side APIs, UI-Kit.'
         },
     ])
 
   return (
-    <section className="my-5">
-      <h2 id="logo"> Our services</h2>
+    <section className="my-5 services">
+      <h2 id="body"> Our services</h2>
       <div className="my-2">
 
+        {/* <img src={sectionStudent}></img>
+        <img src={sectionTeacher}></img> */}
 
       <div id='Our services' className='row'>
             {projects.map((image, index) => (
@@ -48,7 +70,14 @@ function Services() {
                                     <p className='project-prob'>{image.problem_solved}</p>
                                 </div>
                                 <div className='col-10'>
-                                    <p className='project-tech'>Tech Used: {image.technologies_used}</p>
+                                    <p className='project-tech'>Steps 1 {image.Step_1}</p><img src={Step_1Student}/>
+
+                                    <p className='project-tech'>Steps 2 {image.Step_2}</p><img src={Step_2Student}/>
+                                    <p className='project-tech'>Steps 3 {image.Step_3}</p><img src={Step_3Student}/>
+                                    <p className='project-tech'>Steps 4 {image.Step_4}</p><img src={Step_4Student}/>
+
+
+
                                 </div>
                                 
                                 

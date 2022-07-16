@@ -1,6 +1,23 @@
 img {
-    width: 30%;
+    width: 40%;
     opacity: 0.9;
     border-radius: 10%;
+}
+
+img body {
+    width: 40%;
+    
+}
+
+header {
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+h2 {
+    color: black;
+    font-size: 45px;
 }
 

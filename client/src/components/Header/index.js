@@ -25,7 +25,7 @@ const Header = () => {
               <a href="/" onClick={logout}>
                 Logout
               </a>
-              <Link to="/search">Contact us</Link>
+              <Link to="/contact">Contact us</Link>
             </>
           ) : (
             <>
@@ -37,7 +37,7 @@ const Header = () => {
               <Link to="/signup">Signup</Link>
 
 
-              <Link to="/search">Contact us</Link>
+              <Link to="/contact">Contact us</Link>
 
             </>
           )}

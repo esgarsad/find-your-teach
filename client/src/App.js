@@ -17,6 +17,9 @@ import Footer from './components/Footer';
 
  import Services from './pages/Services'; /*y*/
 
+ import Contact from './pages/Contact'; /*y*/
+
+
 
 
 import Login from './pages/Login';
@@ -65,6 +68,12 @@ function App() {
                 path="/services" 
                 element={<Services />} /*y*/
               />
+
+              <Route 
+                path="/contact" 
+                element={<Contact />} /*y*/
+              />
+              
               
 
               <Route 

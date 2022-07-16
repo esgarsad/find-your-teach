@@ -31,12 +31,8 @@ const Header = () => {
             <>
               <Link to="/">Home</Link> 
               <Link to="/services">Services</Link> 
-
-
               <Link to="/login">Login</Link>
               <Link to="/signup">Signup</Link>
-
-
               <Link to="/contact">Contact us</Link>
 
             </>

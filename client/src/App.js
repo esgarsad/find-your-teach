@@ -12,21 +12,18 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
  import Home from './pages/Home';
-
  import Results from './pages/Results'; /*y*/
-
  import Services from './pages/Services'; /*y*/
-
  import Contact from './pages/Contact'; /*y*/
-
-
-
-
 import Login from './pages/Login';
-import NoMatch from './pages/NoMatch';
- import SinglePost from './pages/SinglePost';
-import Profile from './pages/Profile';
 import Signup from './pages/Signup';
+import Students from './pages/Students';
+import Teachers from './pages/Teachers';
+
+import NoMatch from './pages/NoMatch';
+import SinglePost from './pages/SinglePost';
+import Profile from './pages/Profile';
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -67,6 +64,16 @@ function App() {
               <Route 
                 path="/services" 
                 element={<Services />} /*y*/
+              />
+
+<Route 
+                path="/students" 
+                element={<Students />} /*y*/
+              />
+
+<Route 
+                path="/teachers" 
+                element={<Teachers />} /*y*/
               />
 
               <Route 

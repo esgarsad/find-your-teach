@@ -59,8 +59,7 @@ const resolvers = {
       return { token, user };
     },
     addPost: async (parent, args, context) => {
-      console.log("hello2")
-      if (context.user) {
+           if (context.user) {
         const post = await Post.create({ ...args, username: context.user.username });
 
         await User.findByIdAndUpdate(
@@ -74,6 +73,22 @@ const resolvers = {
 
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    deletePost: async (parent, args, context) => {
+      if (context.user) {
+        const post = await Post.findOneAndDelete({ ...args, username: context.user.username });
+        await User.findByIdAndUpdate(
+          { _id: context.user._id },
+          { $pull: { posts: post._id } },
+          { new: true }
+        );
+
+   return _id;
+ }
+
+ throw new AuthenticationError('You need to be logged in!');
+},
+    
     addComment: async (parent, { postId, commentBody }, context) => {
       if (context.user) {
         const updatedPost = await Post.findOneAndUpdate(

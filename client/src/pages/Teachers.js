@@ -23,30 +23,32 @@ function Teachers() {
       <div id='Our services' className='row'>
 
                 <div  className='project col-4'>
-                    <div>
-                     
-                            <div className='row project_details'>
-                            
-                                <div className='col-10'>
+             
 
-                                <img
+                        <img
                             className='topics_img'
-                            src={require(`../assets/images/topics.png`)}
+                            src={require(`../assets/images/teachersss.png`)}
                             alt='student'
-                         
                         />
-                                    <h2 className='project-prob'>Teachers</h2>
-                                </div>
+                            <div className='row project_details'>
+
+                                
                                 <div className='col-10'>
-                                    <h3 className='project-tech'>Step 1. Check in</h3><img src={require('../assets/images/log-in.png')}/>
-                                    <h3 className='project-tech'>Step 2. Add your skills</h3><img src={require('../assets/images/recruitment.png')}/>
-                                    <h3 className='project-tech'>Step 3. Wait for students</h3><img src={require('../assets/images/hourglass.png')}/>
-                                    <h3 className='project-tech'>Step 4. Teach </h3><img src={require('../assets/images/school-supplies.png')}/>
+                                <h2 className='project-prob'>Teachers</h2>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-        </div>            
+
+                                <div className='col-10 serv-cont'>
+                                    <div className='steps'><h3 className='project-tech'>Step 1. Check in</h3><img src={require('../assets/images/log-in.png')}/></div>
+                                    <div className='steps'><img src={require('../assets/images/cv.png')}/><h3 className='project-tech'>Step 2. Add your skills</h3></div>
+                                    <div className='steps'><h3 className='project-tech'>Step 3. Wait for students</h3><img src={require('../assets/images/symbo.png')}/></div>
+                                    <div className='steps'><img src={require('../assets/images/schoolde.jpg')}/><h3 className='project-tech'>Step 4. Teach </h3></div>
+                                </div>
+                        
+                                </div> 
+                                
+            </div> 
+
+         </div>    
       </div>
     </section>
   )

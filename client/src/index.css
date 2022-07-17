@@ -41,18 +41,19 @@ body {
 }
 
 .services {
-  background-color: #fff ;
-  
+  background-image: url(./assets/images/background.jpg);
   background-size: cover;
   min-width: 100%;
   left: 0;
-
-
-
- 
   min-height: 100%;
-
 }
+
+/* .results {
+  background-image: url(./assets/images/topics.png);
+  background-size: cover;
+  min-width: 100%;
+} */
+
 h1,
 h2,
 h3,
@@ -167,6 +168,14 @@ nav a:hover {
   width: 20%;
   padding: 8px; /*y*/
 }
+
+.contact-us{
+  display: flex;
+  max-width: 30%;
+  margin: 15px auto;
+}
+   
+
 
 /* CARDS */
 .card {

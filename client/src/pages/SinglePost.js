@@ -3,8 +3,9 @@ import { useParams } from 'react-router-dom';
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
 import Auth from '../utils/auth';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_POST } from '../utils/queries';
+import { DELETE_POST } from '../utils/mutations';
 
 const SinglePost= (props) => {
   const { id: postId } = useParams();
@@ -14,18 +15,30 @@ const SinglePost= (props) => {
 console.log(user)
 }
   
+const [deletePost] = useMutation(DELETE_POST);
+
+const handleClick = async () => {
+  try {
+    await deletePost({
+      variables: { id: postId },
+    });
+  } catch (e) {
+    console.error(e);
+  }
+};
+
   const { loading, data } = useQuery(QUERY_POST, {
     variables: { id: postId },
   });
 
   const post = data?.post || {};
-
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
     <div>
+      
       <div className="card mb-3">
         <p className="card-header">
           <span style={{ fontWeight: 700 }} className="text-light">
@@ -39,7 +52,7 @@ console.log(user)
           <p>${post.postPrice}.00/hour</p>
 
           {(user === post.username) ? (
-          <button className="btn" >
+          <button className="btn"  onClick={handleClick}>
           Delete Post
         </button>
           ):
@@ -49,7 +62,7 @@ console.log(user)
           }
         </div>
       </div>
-
+    
       {post.commentCount > 0 && (
         <CommentList comments={post.comments} />
       )}

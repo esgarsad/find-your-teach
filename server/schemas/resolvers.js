@@ -75,17 +75,10 @@ const resolvers = {
     },
 
     deletePost: async (parent, args, context) => {
-      if (context.user) {
-        const post = await Post.findOneAndDelete({ ...args, username: context.user.username });
-        await User.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $pull: { posts: post._id } },
-          { new: true }
-        );
-
-   return _id;
+         if (context.user) {
+        const deletePost = await Post.findByIdAndDelete({ ...args, username: context.user.username });
+        return id;
  }
-
  throw new AuthenticationError('You need to be logged in!');
 },
     

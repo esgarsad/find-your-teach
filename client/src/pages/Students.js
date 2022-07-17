@@ -27,7 +27,7 @@ function Students() {
                    
                     <img
                             className='student_img'
-                            src={require(`../assets/images/zoom.png`)}
+                            src={require(`../assets/images/studentsss.png`)}
                             alt='student'
                          
                         />

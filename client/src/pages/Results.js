@@ -24,7 +24,7 @@ const Results = () => {
           </form>  
           } 
           
-      <div className="flex-row justify-space-between cards">
+      <div className="flex-row justify-space-between cards results">
      
         <div className= "col-5 mb-3" >
           {(

@@ -1,6 +1,9 @@
 :root {
   --primary: #497573;
-  --secondary:#00FF00;
+  --secondary:#041C32;
+  /* --secondary:#051367; */
+
+  /* --secondary:#00FF00; */
   --tertiary: #b2c2c1;
   --quatrinary: #cadbda;
   --light: grey;
@@ -30,8 +33,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 20px;
-  /* color: var(--dark); */
-  background-image: url(./assets/images/learning.jpg);
+  color: white;
+  background-image: url(./assets/images/background.jpg);
+  /* background-color: white; */
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -96,23 +100,24 @@ h6 {
 
 h1 {
   font-size: 2.50rem;
-  color: gray;/*y*/
+  color: #2FA4FF;/*y*/
 }
 
 h2 {
   font-size: 2rem;
-color: #00FF00;
+color:  #041C32;
   text-align: center; /*y*/
  
 }
 
 h3 {
   font-size: 1.75rem;
+  color: #041C32;
 }
 
 h4 {
   font-size: 1.5rem;
-  color: var(--secondary);
+  color: var(--light);
 }
 
 h5 {
@@ -135,7 +140,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: white;
 }
 
 nav {
@@ -153,8 +158,8 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  color:  #041C32;
+  background-color:  #2FA4FF; 
 }
 
 .page-title {
@@ -172,7 +177,7 @@ nav a:hover {
   margin: 5px 0;
   border-radius: var(--border-radius);
   border: none;
-  color: var(--dark);
+  color: var(--light);
   outline: none;
   background-color: var(--secondary);
   transition: all 0.5s;
@@ -186,7 +191,7 @@ nav a:hover {
 
 .btn:hover a,
 .pill:hover a {
-  color: var(--secondary);
+  color: var(--light);
 }
 
 .btn-inline {
@@ -197,9 +202,6 @@ nav a:hover {
   width: 20%;
   padding: 8px; /*y*/
 }
-
-  
-
 
 /* CARDS */
 .card {
@@ -216,9 +218,9 @@ nav a:hover {
 }
 
 .card-header {
-  color: var(--secondary);
+  color: white;
   margin: 0;
-  background-color: var(--dark);
+  background-color: var(--secondary);
   padding: 0.625rem;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
 }
@@ -708,7 +710,11 @@ nav a:hover {
 
 .bg-secondary {
   background-color: var(--secondary);
+
+  /* background-image: url(./assets/images/learning.jpg); */
+
 }
+
 
 
 /* FLEX CONTENT */

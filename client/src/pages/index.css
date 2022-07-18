@@ -33,7 +33,7 @@ img body {
 }
 
 .project_img {
-    width: 400px;
+    width: 300px;
 }
 
 .intro-p{
@@ -43,8 +43,7 @@ img body {
 
 .contact-form {
     max-width: 80%;
- 
-    text-align: center;
+     text-align: center;
     
 }
 .contact {

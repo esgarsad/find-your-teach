@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function About() {      
+function Home() {      
 
   return (
     
     <section className="my-5 intro-p">
+         <img
+                           className='student_img'
+                           src={require(`../assets/images/focus1.png`)}
+                           alt='student'
+                        
+                       />
       <h2 className="logo title-home">Knowledge at one click distance</h2>     ;
       <div className="my-2 text-center">
+
           <>
           <button className="btn" >
           <Link to="/results">Find out</Link>
@@ -26,6 +33,6 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
 
 

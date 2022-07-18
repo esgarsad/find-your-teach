@@ -9,13 +9,19 @@ function Services() {
 
   return (
     <section className="my-5 services">
+        <img
+                            className='student_img'
+                            src={require(`../assets/images/subjects.png`)}
+                            alt='student'
+                         
+                        />
       <h2 id="body"> Our services</h2>
       <div className="my-2">
       <div id='Our services' className='row'>
+                <div  className='projects col-4'>
                 <div  className='project col-4'>
                    <h3>Students</h3>
-                   
-
+                                      
                     <Link to="/students">
                         <img
                             className='project_img'
@@ -25,7 +31,7 @@ function Services() {
                         />
                         </Link>
                         
-                     <div>
+                        </div>
 
                      <div  className='project col-4'>
                      <h3>Teachers</h3>
@@ -41,7 +47,7 @@ function Services() {
                             <div className='row project_details'>  
                             </div>
                         </div>
-                    </div>
+                   
                     </div> 
         </div> 
       </div>

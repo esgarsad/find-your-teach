@@ -37,28 +37,31 @@ function Contact() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag center">Contact me</h1>
-      <form id="contact-form " onSubmit={handleSubmit}>
+    <section className='contact flex-row justify-center'>
+              
+      <form className="contact-form "  onSubmit={handleSubmit}>
+       
+        <h4 className="card-header">Contact Us</h4>
+        <div className="card">
+         
+          <input type="text" className="form-input" placeholder='name' onBlur={handleChange} />
+       
         <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+                    <input type="email" className="form-input"   placeholder='email address' onBlur={handleChange} />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                   <textarea className="form-input"  rows="5"  placeholder='Leave a message...' onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button className="btn d-block w-100" type="submit">Submit</button>
+        </div>
       </form>
+      
+      <h3 >We'd love to hear from you, give us a message and we'll be in touch with you</h3>
     </section>
   );
 }

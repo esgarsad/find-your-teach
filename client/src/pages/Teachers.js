@@ -27,7 +27,7 @@ function Teachers() {
 
                         <img
                             className='topics_img'
-                            src={require(`../assets/images/teachersss.png`)}
+                            src={require(`../assets/images/teachs.png`)}
                             alt='student'
                         />
                             <div className='row project_details'>

@@ -19,7 +19,7 @@ console.log(user)
   
 
   return (
-    <div>
+    <div className= "col-7 mb-3 ind-post" id="ind-post">
       <h3>{title}</h3>
       {posts &&
         posts.map(post => (

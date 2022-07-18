@@ -20,14 +20,14 @@ const Results = () => {
           
       <div className="flex-row justify-space-between cards results">
      
-        <div className= "col-5 mb-3 ind-post" id="ind-post" >
+        {/* <div className= "col-12 mb-3 ind-post" id="ind-post" > */}
           {(
             <PostList
               posts={posts}
               title="Here are some teachers you might find helpful"
             />
           )}
-        </div>
+        {/* </div> */}
         
       </div>
     </main>

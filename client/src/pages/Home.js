@@ -7,7 +7,7 @@ function Home() {
     
     <section className="my-5 intro-p">
          <img
-                           className='student_img'
+                           className='student_img focus1'
                            src={require(`../assets/images/focus1.png`)}
                            alt='student'
                         

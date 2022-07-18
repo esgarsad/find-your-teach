@@ -1,30 +1,17 @@
 :root {
-  --primary: #497573;
+  --primary: #2FA4FF ;
   --secondary:#041C32;
-  /* --secondary:#051367; */
-
-  /* --secondary:#00FF00; */
-  --tertiary: #b2c2c1;
-  --quatrinary: #cadbda;
+  --tertiary: white;
   --light: grey;
   --dark: black;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
-  /* --spacing-one: calc(1rem * 0.25); */
-  /* --spacing-two: calc(1rem * 0.5); */
-  /* --spacing-three: 1rem; */
   --spacing-four: calc(1rem * 1.5);
-  /* --spacing-five: calc(1rem * 3); */
 }
 
 * {
   box-sizing: border-box;
 }
-
-/* html,
-body {
-  min-height: 100%;
-} */
 
 body {
   margin: 0;
@@ -35,7 +22,6 @@ body {
   font-size: 20px;
   color: white;
   background-image: url(./assets/images/background.jpg);
-  /* background-color: white; */
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -186,12 +172,12 @@ nav a:hover {
 .btn:hover,
 .pill:hover {
   color: var(--secondary);
-  background-color: var(--dark);
+  background-color: #2FA4FF;
 }
 
 .btn:hover a,
 .pill:hover a {
-  color: var(--light);
+  color: #041C32;
 }
 
 .btn-inline {

@@ -25,11 +25,11 @@ console.log(user)
         posts.map(post => (
           <div key={post._id} className="card col-3">
 
-            {<p className="card-header">
-                {post.postTitle}
+            {<h3 className="card-header">
+                {post.postTitle}</h3> }
               <p>${post.postPrice}.00/Hour</p>
-            </p>            
-    }
+                       
+    
           
             <div className="card-body">
               <Link to={`/post/${post._id}`}>

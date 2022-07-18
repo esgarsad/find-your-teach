@@ -60,18 +60,17 @@ function App() {
                 path="/results" 
                 element={<Results />} /*y*/
               />
+                
 
               <Route 
                 path="/services" 
                 element={<Services />} /*y*/
               />
-
-<Route 
+               <Route 
                 path="/students" 
                 element={<Students />} /*y*/
               />
-
-<Route 
+              <Route 
                 path="/teachers" 
                 element={<Teachers />} /*y*/
               />

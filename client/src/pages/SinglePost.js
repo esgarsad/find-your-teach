@@ -50,7 +50,7 @@ const handleClick = async () => {
           <p>{post.postText}</p>
           <p>{post.postTitle}</p>
           <p>${post.postPrice}.00/hour</p>
-
+          <img src={`${post.postPicture}`}/>   
           {(user === post.username) ? (
           <button className="btn"  onClick={handleClick}>
           Delete Post

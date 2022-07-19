@@ -11,6 +11,7 @@ import { ADD_POST } from '../../utils/mutations';
       postTitle: '',
       postText: '',
       postPrice: '',
+      postPicture: ''
     });
     const [addPost, { error }] = useMutation(ADD_POST);
   
@@ -29,7 +30,7 @@ import { ADD_POST } from '../../utils/mutations';
       event.preventDefault();
   
       try {
-        //console.log(postFormState)
+        console.log(postFormState)
          await addPost({
           
           variables: { ...postFormState },
@@ -75,6 +76,15 @@ import { ADD_POST } from '../../utils/mutations';
             type="number"
             id="postPrice"
       value={postFormState.postPrice}
+      className="form-input col-12 col-md-9"
+      onChange={handleChange}
+    /> 
+     <input
+            placeholder="Upload a picture "
+            name="postPicture"
+            type="string"
+            id="postPicture"
+      value={postFormState.postPicture}
       className="form-input col-12 col-md-9"
       onChange={handleChange}
     /> 

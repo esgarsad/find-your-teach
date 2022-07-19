@@ -4,6 +4,7 @@
         "postPrice" : 25,
         "postText" : "Chinese teacher with big tons of experience, you'll learn in no time!", 
         "username" : "Jody.Eichmann", 
+        "postPicture" : "https://1.bp.blogspot.com/_SEHwRxTbjZ0/TUQh9X6VtjI/AAAAAAAACbE/K5py8KngryU/s1600/hot+chinese+girl+%25282%2529.jpg", 
         "comments" : [ 
             {
                 "commentBody" : "please send me information to user@user.com", 
@@ -16,6 +17,7 @@
         "postPrice" : 25,
         "postText" : "Classic guitar is my passion and with my method, you will learn", 
         "username" : "Shyann.Crist57", 
+        "postPicture" : "https://wallpapercave.com/wp/wp3145677.jpg", 
         "comments" : [ ] 
     },
     {
@@ -31,7 +33,7 @@
      ] 
     },
     {
-        "postTitle" : "Math teacher from Nash Communiti College",
+        "postTitle" : "Math teacher from Nash Community College",
         "postPrice" : 28,
         "postText" : "You will learn math with a performace focus", 
         "username" : "Donny21", 

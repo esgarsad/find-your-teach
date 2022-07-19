@@ -14,6 +14,7 @@ const typeDefs = gql`
     postTitle: String
     postText: String
     postPrice: Float
+    postPicture: String
     createdAt: String
     username: String
     commentCount: Int
@@ -43,7 +44,7 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addPost(postText: String! postTitle:String!, postPrice:String!): Post
+    addPost(postText: String! postTitle:String!, postPrice:String!, postPicture:String!): Post
     addComment(postId: ID!, commentBody: String!): Post
     deletePost(_id: ID!): Post
   }

@@ -20,6 +20,9 @@ const PostSchema = new Schema(
       type: Number,
       required: 'Indicate your class price',
          },
+         postPicture: {
+          type: String,
+          },
     createdAt: {
       type: Date,
       default: Date.now,

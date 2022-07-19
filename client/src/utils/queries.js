@@ -7,6 +7,7 @@ export const QUERY_POSTS = gql`
       postTitle
       postText
       postPrice
+      postPicture
       createdAt
       username
       commentCount
@@ -29,6 +30,7 @@ export const QUERY_POST = gql`
       postTitle
       postText
       postPrice
+      postPicture
       createdAt
       username
       commentCount

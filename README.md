@@ -19,5 +19,5 @@ https://colorhunt.co/palettes/navy
 
 
 
-![FYT](https://github.com/esgarsad/find-your-teach/blob/main/assets/images/findyourteach.jpg?raw=true)
-![FYT2](https://github.com/esgarsad/find-your-teach/blob/main/assets/images/findyourteach2.jpg?raw=true)
+![FYT](https://github.com/esgarsad/find-your-teach/blob/main/client/public/findyourteach.jpg)
+![FYT2](https://github.com/esgarsad/find-your-teach/blob/main/client/public/findyourteach2.jpg)

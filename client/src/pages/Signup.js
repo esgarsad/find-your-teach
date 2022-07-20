@@ -75,10 +75,10 @@ const Signup = () => {
                 Submit
               </button>
             </form>
-
             {error && <div>Signup failed</div>}
           </div>
-        </div>
+          </div>
+        <h3>Signup as a Teacher or a Student to be able to list your publications, ask questions and start learning!</h3>
       </div>
     </main>
   );

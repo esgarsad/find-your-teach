@@ -72,6 +72,7 @@ const Login = (props) => {
             {error && <div>Login failed</div>}
           </div>
         </div>
+        <h3>Login and start learning!</h3>
       </div>
     </main>
   );

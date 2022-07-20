@@ -7,12 +7,16 @@ const Results = () => {
   const { data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
 
+
+
+
+  
    return (
     <main>
           { <form className="card-content white-text text-center" id= "submit-form">
-          <input name="product-input"  placeholder= "Look for this topic..." id="topic" type="text" autoFocus={true} className="product-input"/>
+          <input name="topic"  placeholder= "Look for this topic..." id="topic" type="text" autoFocus={true} className="product-input"/>
 
-         <input name="product-input" placeholder= "City" id="type-event" type="text" autoFocus={true} className="product-input"/>
+         {/* <input name="product-input" placeholder= "City" id="type-event" type="text" autoFocus={true} className="product-input"/> */}
          <button type="submit" className="btn" id="submit"><i className="fa fa-fw fa-search" ></i>Search</button> 
 
           </form>  

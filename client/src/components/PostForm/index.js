@@ -40,10 +40,15 @@ import { ADD_POST } from '../../utils/mutations';
       } catch (e) {
         console.error(e);
       }
+      setPostFormState({
+        postTitle: '',
+        postText: '',
+        postPrice: '',
+        postPicture: ''
+      });
       
     };
-   // const numeric=postFormState.postPrice.replace(/['"]+/g, '')
-//console.log(numeric)
+
   return (
     <div>
      

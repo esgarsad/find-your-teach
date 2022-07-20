@@ -22,6 +22,8 @@ const handleClick = async () => {
     await deletePost({
       variables: { id: postId },
     });
+
+    
   } catch (e) {
     console.error(e);
   }

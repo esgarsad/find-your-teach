@@ -4,7 +4,7 @@
         "postPrice" : 25,
         "postText" : "Chinese teacher with big tons of experience, you'll learn in no time!", 
         "username" : "Jody.Eichmann", 
-        "postPicture" : "https://1.bp.blogspot.com/_SEHwRxTbjZ0/TUQh9X6VtjI/AAAAAAAACbE/K5py8KngryU/s1600/hot+chinese+girl+%25282%2529.jpg", 
+        "postPicture" : "https://www.learningexplorer.org/wp-content/uploads/2019/04/6-things-to-look-for-when-choosing-a-chinese-teacher.jpg", 
         "comments" : [ 
             {
                 "commentBody" : "please send me information to user@user.com", 
@@ -33,10 +33,11 @@
      ] 
     },
     {
-        "postTitle" : "Math teacher from Nash Community College",
+        "postTitle" : "Karate teacher",
         "postPrice" : 28,
-        "postText" : "You will learn math with a performace focus", 
-        "username" : "Donny21", 
+        "postText" : "Hello, I am a black belt karate teacher with a couple special moves", 
+        "username" : "DammeV", 
+        "postPicture": "https://www.martialartsentertainment.com/wp-content/uploads/2010/09/van-damme-1066x550-1024x528.jpg",
         "comments" : [ ] 
     },
     {

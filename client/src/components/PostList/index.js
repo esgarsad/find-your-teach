@@ -34,7 +34,8 @@ console.log(user)
             <div className="card-body">
               <Link to={`/post/${post._id}`}>
               <p>{post.username}</p>
-                <p>{post.postText}</p>                
+                <p>{post.postText}</p>  
+                <img src={post.postPicture} alt='' />            
                       <p className="mb-0">
                   Comments: {post.commentCount} 
                 </p>

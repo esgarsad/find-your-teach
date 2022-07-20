@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-// import sectionTeacher from '../assets/images/teacher.png';
 import './index.css';
 
 function Services() {
@@ -19,7 +18,7 @@ function Services() {
       <div className="my-2">
       <div id='Our services' className='row'>
                 <div  className='projects col-4'>
-                <div  className='project col-4'>
+                <div  className='project col-4 '>
                    <h3>Students</h3>
                                       
                     <Link to="/students">
@@ -33,7 +32,7 @@ function Services() {
                         
                         </div>
 
-                     <div  className='project col-4'>
+                     <div  className='project col-4 '>
                      <h3>Teachers</h3>
 
                         <Link to="/teachers">
